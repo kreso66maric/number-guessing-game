@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+}
+.game-container{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://www.pngarts.com/files/4/Numbers-PNG-Background-Image.png');
+}
+.title{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+}
+#number-guess{
+    position: relative;
+    top: 25%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+.message{
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-size: 100px;
+}
+.counter-message{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+
+}
+.counter-number{
+    font-size: 30px;
+}
+.history-number{
+    font-size: 30px;
+}
+/*============= Modal ================*/
+.modal{
+    position: relative;
+    top: 25%;
+    display: block;
+    width: 50%;
+    height: 50%;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.modal-title{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+.modal-list{
+    color: #fff;
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+}
+.modal-list li{
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.modal-btn{
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px auto;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+.modal-btn:active{
+    position: relative;
+    top: 2px;
+}
+.modal-btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+/*=========== End modal ============*/
+.reset-btn{
+    position: relative;
+    top: 50%;
+    display: block;
+    margin: auto;
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    color: #fff;
+    background: #000;
+}
+.reset-btn:hover{
+    background: #fff;
+    color: #000;
+}
+.reset-btn:active{
+    position: relative;
+    top: 50.2%;
+}
+
+/*========= Number of tries colors ==============*/
+
+.green{
+    color: #7aff4e;
+}
+.orange{
+    color: #ffc14d;
+}
+.red{
+    color: #ff493c;
+}
