@@ -8,6 +8,7 @@ let endMessage = document.getElementById('end-message');
 let counterNumber = document.getElementById('counter-number');
 let historyNumber = document.getElementById('history-number');
 let answer = numberGuess.value;
+let arr = [];
 
 let tries = 10;
 let secretNumber = Math.floor(Math.random() * 100 + 1);
@@ -34,7 +35,6 @@ function gameReset() {
     counterNumber.classList.remove('red');
     counterNumber.classList.remove('orange');
     colorOfTries();
-    console.log(tries);
 }
 
 
@@ -72,8 +72,7 @@ function numberCheck() {
         gameContainer.style.display = 'none';
         endMessage.style.display = 'block';
         resetBtn.style.display= 'block';
-        endMessage.innerText = 'Your number was ' + numberGuess.value + ' You Win!!!';
-        
+        endMessage.innerText = 'Your number was ' + numberGuess.value + ' You Win!!! You used numbers ' + arr;
     }
 }
 
@@ -81,7 +80,7 @@ function countTimes() {
     if (tries === 0) {
         gameContainer.style.display = 'none';
         endMessage.style.display = 'block';
-        endMessage.innerText = 'Game over! Correct number was ' + secretNumber;
+        endMessage.innerText = 'Game over! Correct number was ' + secretNumber + 'You use numbers ' + arr;
         resetBtn.style.display = 'block';
     }
     colorOfTries();
