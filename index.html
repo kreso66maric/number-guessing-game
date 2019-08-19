@@ -4,24 +4,12 @@
         <meta charset="UTF-8">
 
         <!-- Google fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
-        <title>Guessing game</title>
+        <title>Guess the number</title>
     </head>
     <body>
-        
-        <!-- Modal -->
-        <div class="modal" id="modal">
-            <h2 class="modal-title">Rules!</h2>
-            <ul class="modal-list">
-                <li>Guess number between 1 and 100</li>
-                <li>You have 10 tries.</li>
-                <li>Let's play!!</li>
-            </ul>
-
-            <button type="button" class="modal-btn" id="modal-btn">Play</button>
-        </div>
 
         <div class="game-container" id="game-container">
                 <h1 class="title">Guess your number!</h1>
@@ -29,7 +17,7 @@
                 <p class="counter-message" id="counter-message">You have <span class="counter-number" id="counter-number"></span> tries left.</p>
                 <p class="counter-message" id="history-message">Last number entered was <span class="history-number" id="history-number"></span></p>
 
-                <input type="number" id="number-guess" name="number-guess" value="" required>
+                <input type="number" class="number-guess" id="number-guess" name="number-guess" value="" required>
 
                 <h3 class="message" id="message"></h3>
         </div>
@@ -39,6 +27,20 @@
             <button type="button" class="reset-btn" id="reset-btn">Play Again?</button>
         
 
+        <!-- Modal -->
+        <div class="modal" id="modal">
+                <div class="box-one">
+                    <h2 class="modal-title">Rules!</h2>
+                </div>
+                <div class="box-two">
+                    <ul class="modal-list">
+                        <li>Guess number between 1 and 100.</li>
+                        <li>You have 10 tries.</li>
+                        <li>Let's play!!</li>
+                    </ul>
+                </div>
+                <button type="button" class="modal-btn" id="modal-btn">Play</button>
+            </div>
 
         <script type="text/javascript" src="js/script.js"></script>
     </body>

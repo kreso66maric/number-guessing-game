@@ -15,7 +15,7 @@ let secretNumber = Math.floor(Math.random() * 100 + 1);
 
 function gameInit() {
     gameContainer.style.display = 'none';
-    modal.style.display = 'block';
+    modal.style.display = '';
     endMessage.style.display = 'none';
     resetBtn.style.display = 'none';
     colorOfTries();
