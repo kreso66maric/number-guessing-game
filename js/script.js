@@ -72,7 +72,7 @@ function numberCheck() {
         gameContainer.style.display = 'none';
         endMessage.style.display = 'block';
         resetBtn.style.display= 'block';
-        endMessage.innerText = 'Your number was ' + numberGuess.value + ' You Win!!! You used numbers ' + arr;
+        endMessage.innerText = 'You guessed right!! Your number was ' + numberGuess.value;
     }
 }
 
@@ -80,7 +80,7 @@ function countTimes() {
     if (tries === 0) {
         gameContainer.style.display = 'none';
         endMessage.style.display = 'block';
-        endMessage.innerText = 'Game over! Correct number was ' + secretNumber + 'You use numbers ' + arr;
+        endMessage.innerText = 'Game over! Correct number was ' + secretNumber;
         resetBtn.style.display = 'block';
     }
     colorOfTries();

@@ -71,6 +71,7 @@ html, body{
     background-color: #0a58a4;
     animation-name: box-one;
     animation-duration: 2s;
+    box-shadow: 3px 4px #ccc;
 }
 
 @keyframes box-one {
